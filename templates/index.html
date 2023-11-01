@@ -44,13 +44,21 @@
         </div>
       </nav>
       <div class="container my-3">
-        <h1>PDF Merger Tool</h1>
+        <h1 class="text-center">PDF Merger Tool</h1>
+        <div class="text-center">
+          <img src="https://blog.groupdocs.cloud/merger/merge-pdf-files-using-rest-api-in-python/images/merge-pdf-files-using-rest-api-in-python.jpg#center" class="rounded" alt="PDF">
+        </div>
         <form method="post" action="/merge" enctype="multipart/form-data" >
-            <div class="form-group">
-              <label for="exampleFormControlFile1">Input File Here</label>
-              <input type="file" name="pdfs" class="form-control-file" id="exampleFormControlFile1" multiple accept=".pdf">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
             </div>
-            <input type="submit" value="Submit" class="btn btn-primary">
+            <div class="custom-file">
+              <input type="file" name="pdfs" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" multiple accept=".pdf">
+              <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+            </div>
+            <input type="submit" value="Submit" class="btn btn-primary mx-2">
+          </div>
           </form>
       </div>
 
