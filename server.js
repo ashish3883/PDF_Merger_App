@@ -17,6 +17,9 @@ app.post("/merge", upload.array('pdfs', 2), async (req, res, next)=> {
     // req.files is array of `photos` files
     // req.body will contain the text fields, if there were any
   })
+  app.get('/about', (req, res) => {
+    res.sendFile(path.join(__dirname, 'templates/about.html'))
+  })
 
 app.listen(port, () => {
   console.log(`Example app listening on port http://localhost:${port}`)
